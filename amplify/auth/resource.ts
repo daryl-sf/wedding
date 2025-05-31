@@ -9,7 +9,6 @@ export const auth = defineAuth({
     email: {
       verificationEmailStyle: "CODE",
       verificationEmailSubject: "Weddiing Pictures - Verification Code",
-      verificationEmailBody: (createCode) => `Your verification code is ${createCode}. Happy snapping!`,
     },
   },
 });
