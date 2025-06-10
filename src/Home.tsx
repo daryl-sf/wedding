@@ -1,24 +1,33 @@
+import "./Home.css";
+
 export default function Home() {
   return (
-    <div>
-      <h1 style={{ textAlign: "center" }}>
-        Welcome to Marina and Daryls Wedding!
-      </h1>
-      <p style={{ textAlign: "center" }}>
-        This is a photo gallery app where you can upload and view photos from
-        the wedding.
-      </p>
-      <p style={{ textAlign: "center" }}>
-        Please share your good times and memories with us!
-      </p>
-      <p style={{ textAlign: "center" }}>
-        <a
-          href="/photos"
-          style={{ textDecoration: "underline", color: "#fa3636" }}
-        >
-          View Photos
+    <div className="home">
+      <div className="titles">
+        <h1 className="header">Welcome To Our Wedding!</h1>
+        <h2 className="names">Marina & Daryl</h2>
+      </div>
+      <div className="cards">
+        <a href="/photos">
+          <div className="card gallery">
+            <h3>Share the craic!</h3>
+            <div>
+              We&apos;d love to see the moments you captured on our special day.
+              Click below to upload your photos and explore the memories shared
+              by everyone.
+            </div>
+            <div className="img"></div>
+          </div>
         </a>
-      </p>
+        <div className="card table-plan">
+          <h3>Find your seat</h3>
+          <div>
+            Wondering where to sit? Use our handy table plan to find your seat
+            and join in the celebration.
+          </div>
+          <div className="img"></div>
+        </div>
+      </div>
     </div>
   );
 }

@@ -91,8 +91,9 @@ function PhotoGallery() {
       <label
         htmlFor="file-upload"
         style={{
-          width: "4rem",
-          height: "4rem",
+          // width: "4rem",
+          // height: "4rem",
+          padding: "0.5rem",
           borderRadius: "1rem",
           border: "2px solid #fa3636",
           backgroundColor: "#fdd5d8",
@@ -106,6 +107,7 @@ function PhotoGallery() {
         }}
       >
         <CameraIcon style={{ height: "2rem", width: "2rem" }} />
+        Upload Photos
         <input
           id="file-upload"
           type="file"
